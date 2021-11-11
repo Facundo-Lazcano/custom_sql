@@ -15,3 +15,13 @@
   
   
   
+2do Ejercicio
+  SELECT e.nombre, e.apellido, c.nombre as curso FROM custom_sql.estudiante e inner join custom_sql.curso c inner join custom_sql.inscripcion i  on e.legajo =               i.ESTUDIANTE_legajo and c.codigo = i.CURSO_codigo ;
+
+  SELECT e.nombre, e.apellido, c.nombre as curso FROM custom_sql.estudiante e inner join custom_sql.curso c inner join custom_sql.inscripcion i  on e.legajo =               i.ESTUDIANTE_legajo and c.codigo = i.CURSO_codigo order by c.nombre;
+  
+  SELECT p.nombre, p.apellido, c.nombre as curso FROM custom_sql.profesor p inner join custom_sql.curso c on p.id = c.PROFESOR_id;
+  
+  SELECT p.nombre, p.apellido, c.nombre as curso FROM custom_sql.profesor p inner join custom_sql.curso c on p.id = c.PROFESOR_id order by c.nombre;
+  
+  
