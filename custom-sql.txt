@@ -1,11 +1,17 @@
-SELECT * FROM profesor WHERE salario >= 65000;
+1er Ejercicio
 
-SELECT * FROM profesor ORDER BY fecha_nacimiento ASC
+  SELECT COUNT(*) as `Estudiantes en Mecanica` FROM estudiantes WHERE nombre = 'Mecanica' ;
 
-SELECT * FROM profesor WHERE fecha_nacimiento BETWEEN "1980-01-01" AND "1989-12-31";
+  SELECT min(salario) FROM profesor WHERE fecha_nacimiento BETWEEN "1980-01-01" AND "1989-12-31";
 
-SELECT * FROM profesor LIMIT 5;
+  SELECT  y.nombre, Count(*) as 'cantidad de pasajeros' from pasajero x inner join pais y on x.idpais = y.idpais group by x.idpais
 
-SELECT * FROM profesor WHERE apellido LIKE "P%";
+  SELECT sum(monto) FROM pago;
 
-SELECT * FROM profesor WHERE fecha_nacimiento BETWEEN "1980-01-01" AND "1989-12-31" AND salario >= 80000;
+  SELECT Round(sum(monto), 2) FROM pago where idpasajero=%d;
+
+  SELECT AVG(monto) FROM pago where idpasajero=%d;
+  
+  
+  
+  
